@@ -1,0 +1,86 @@
+.card{
+    position: relative;
+    box-shadow: 2px  2px 10px #888888;
+    padding: 10px;
+transform-style: preserve-3d;
+transition: all 0.5s ease;
+    /* border: 1px solid black; */
+}
+.discription{
+    text-align: left;
+    margin:15px 5px 10px 15px;
+}
+.connect{
+    display: inline;
+    margin: 15px 15px;
+    padding: 3px 10px;
+font-size: 15px;
+border-radius: 20px;
+}
+.front{
+    backface-visibility: hidden;
+position: relative;
+}
+.back{
+    
+flex-direction: column;
+width: 100%;
+    position: absolute;
+    top: 0;
+    /* height: 100%; */
+    backface-visibility: hidden;
+transform: rotateY(180deg);
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.categoryBlock{
+    display: grid;
+    gap: 20px 50px;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.company{
+    padding:10px 3px;
+    font-size: 20px;
+}
+
+.heading{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+.Education{
+    background-color: #0087ca;
+    
+}
+.Business{
+    background-color: #f7782f;
+   
+}
+.NGO{
+    background-color: #9263ff;
+   
+}
+.Finance{
+
+    background-color: #ff9b58;
+    
+}
+
+.type{
+    font-size: 15px;
+    position: absolute;
+    display: inline;
+    top:0;
+    right:0;
+    margin: 4px 5px;
+    border-radius: 5px;
+    padding: 0 3px;
+    /* right: 0px; */
+   
+    color:aliceblue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
